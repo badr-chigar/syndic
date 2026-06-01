@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="6dp" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/p_appartement" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Appt A-12" android:textColor="@color/text"
+                android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:id="@+id/p_mois" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Juin 2026" android:textColor="@color/muted" />
+        </LinearLayout>
+        <TextView android:id="@+id/p_montant" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="350 MAD" android:textColor="@color/text"
+            android:textStyle="bold" android:layout_marginEnd="12dp" />
+        <TextView android:id="@+id/p_statut" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Payé" android:background="@drawable/badge_ok"
+            android:paddingHorizontal="12dp" android:paddingVertical="5dp" android:textColor="@color/ok"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
